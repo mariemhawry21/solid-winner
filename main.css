@@ -1,0 +1,107 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:root{
+    --Paleblue: #e0e8ff;
+    --Brightblue: hsl(245, 75%, 52%);
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+}
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: var(--Paleblue);
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.card{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 5%;
+    width: 50%;
+    height: 90%;
+}
+img{
+border-radius: 5% 5% 0 0;
+width: 100%;
+}
+.sec1{
+margin-bottom: 10px;
+}
+.sec1 h1{
+    font-weight: 900;
+    font-size: 24px;
+}
+p{
+    color: var(--Desaturated-blue);
+}
+.sec2{
+    width: 80%;
+    height: 20%;
+    background-color: var(--Verypaleblue);
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10%;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.first{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.second{
+margin: 0;
+padding: 0;
+margin-right: 30px;
+display: flex;
+flex-direction: column;
+}
+.second p{
+    padding-bottom: 50px;
+    margin: 0;
+}
+.second h3{
+    padding-top: 50px;
+    margin: 0;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+a{
+    color: var(--Brightblue);
+}
+.third{
+    padding-right: 20px;
+}
+.sec3{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+button{
+    background-color: transparent;
+    border: none;
+    height: 50px;
+    border-radius: 5%;
+    font-weight: bold;
+    cursor: pointer;
+}
+#one{
+    background-color: var(--Brightblue);
+    box-shadow:5px 10px 10px #e0e8ff;
+    color: white;
+}
+#one:hover{
+    background-color: var(--Desaturated-blue);
+}
